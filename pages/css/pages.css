@@ -13,6 +13,211 @@ body {
 
 img {
     max-width: 100%; /* Afbeeldingen responsive maken */
+    max-width: 100px
 }
 
 /* Voeg jouw css hieraan toe */
+body{
+    font-family: 'raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+h2{
+    font-family: 'roboto','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(83, 208, 106)
+}
+
+
+/* KLEUREN */
+.kleurcontainer{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+}
+.color{
+    list-style-type: none;
+}
+.kleur1{
+    background: rgb(83, 208, 106);
+    border: 1pt solid lightgray;
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+    min-width: 200px;
+    max-width: 300px;
+    height: 150px;
+    margin: 10px
+}
+.kleur2{
+    background: rgb(255, 255, 255);
+    border: 1pt solid lightgray;
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+    min-width: 200px;
+    max-width: 300px;
+    height: 150px;
+    margin: 10px
+}
+.kleur3{
+    background: rgb(0, 0, 0);
+    border: 1pt solid lightgray;
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+    min-width: 200px;
+    max-width: 300px;
+    height: 150px;
+    margin: 10px
+}  
+
+.kleur4{
+    background: rgb(240, 240, 240);
+    border: 1pt solid lightgray;
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+    min-width: 200px;
+    max-width: 300px;
+    height: 150px;
+    margin: 10px
+}
+
+.kleur5{
+    background: rgb(165, 161, 161);
+    border: 1pt solid lightgray;
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+    min-width: 200px;
+    max-width: 300px;
+    height: 150px;
+    margin: 10px
+}
+
+.kleur6{  
+    background: rgb(112, 112, 112);
+    border: 1pt solid lightgray;
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+    min-width: 200px;
+    max-width: 300px;
+    height: 150px;
+    margin: 10px
+}
+.kleur{color: black;
+    padding-top: 20px
+}
+   
+
+.kleurig{ color: #FFFFFF;
+    padding-top: 20px
+}
+/* LETTERTYPEN*/
+.raleway{
+    padding-left: 20px;
+    font-size: 16px;
+    font-family: 'Raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+.robotica{ 
+    padding-left: 20px;
+    font-size: 16px;
+    font-family: 'roboto','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif}
+
+    /*BUTTONS */
+.buttonscontainer{
+    display: flex;
+    padding-left: 0px;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;      
+}
+.ticket{
+    color: white;
+    background: rgb(83, 208, 106);
+    font-size: 12px;
+    text-align: center;
+    min-width: 80px;
+    max-width: 80px;
+    height: 25px;
+    font-family: 'raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+/*nAVIGATIE */
+.homeimg{ 
+    height: 35px;  
+    align-self: top;
+    
+} 
+.home{
+padding-top: 0px;
+
+}
+
+.navigatiebalk{
+   display: flex;
+   justify-content: space-between;
+   background-color: black;
+   padding: 10px 100px 0px 100px;
+   color: white;
+   font-family: 'raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+.knop {
+
+cursor: pointer;
+border-bottom: black solid 5px;
+align-self: flex-end;
+padding-bottom: 10px
+
+}
+
+.active, .knop:hover{
+    color:rgb(83, 208, 106);
+    border-color:rgb(83, 208, 106) 
+}
+/*FOOTER*/
+.footerknop {
+    
+    cursor: pointer;
+    align-self: flex-end;
+    padding-bottom: 10px;
+    padding-left:4px;
+    padding-right: 4px;
+    font-family: 'raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    }
+.container{
+     background-color: black;
+     padding: 10px 100px 10px 100px;
+     color: white;
+    font-family: 'raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     display: flex;
+     justify-content:space-around;
+     height: 20px;
+    
+}
+.footer{
+     display: flex;
+     position: absolute;
+     left: 50%;
+     transform: translate(-50%);
+   
+   
+}
+
+.footerknop:hover{
+    color:rgb(83, 208, 106);
+   
+}
+
+img{ height: 20px}
+
+.social{
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    display: flex;
+   
+}

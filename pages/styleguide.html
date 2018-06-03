@@ -7,8 +7,241 @@
     <title>Digital Styleguide - Eindopdracht NMD-I</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/pages.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
 </head>
 <body>
     <h1>Digital Styleguide</h1>
+    <!--Vanaf hier begint mijn styleguide-->
+<h3>Kleuren</h3>
+    <div class="kleurcontainer">
+        <div class="kleur1"> 
+            <!--Groen-->
+            <div class="kleur">
+                <ul class="color">
+                <li>RGB 83, 208, 106</li>
+                <li>HSL 131°, 57%, 57%</li>
+                <li>Hex 53D06A</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="kleur2">
+            <!--Wit-->
+             <div class="kleur">
+                <ul class="color">
+                    <li>RGB 255, 255, 255</li>
+                    <li>HSL	0°, 0%, 100%</li>
+                    <li>Hex	FFFFFF</li>
+                </ul>
+             </div>
+        </div>
+
+        <div class="kleur3">
+            <!--Zwart-->
+             <div class="kleurig">
+                 <ul class="color">
+                    <li>RGB	0, 0, 0</li>
+                    <li>HSL	0°, 0%, 0%</li>    
+                    <li>Hex 000000</li>
+                </ul>            
+            </div>
+        </div>   
+
+        <div class="kleur4">
+            <!--licht grijs-->
+            <div class="kleur">
+                <ul class="color">
+                    <li>RGB	240, 240, 240</li>
+                    <li>HSL	0°, 0%, 94%</li>
+                    <li>Hex F0F0F0</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="kleur5">
+            <!--middel grijs-->
+            <div class="kleur">
+                <ul class="color">
+                    <li>RGB 165, 161, 161</li>
+                    <li>HSL 0°, 2%, 64%</li>
+                    <li>Hex A5A1A1</li>
+                </ul>
+            </div>  
+        </div>  
+
+         <div class="kleur6">
+            <!--donker grijs-->
+            <div class="kleur">
+                <ul class="color">
+                    <li>RGB 112, 112, 112</li>
+                    <li>HSL 0°, 0%, 44%</li>
+                    <li>hex 707070</li>
+                </ul>
+            </div>                        
+        </div>
+
+    </div>
+<!--LETTERTYPEN-->
+ <h3>Lettertypen</h3>
+   <p class="raleway">Raleway 16 px </p>
+  
+   <p class="raleway">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aut cumque officiis sapiente, velit inventore deleniti? Quam nam totam sunt. Nostrum molestiae temporibus unde facere nihil eveniet similique! Doloribus, animi.</p>
+   <p class="robotica">Robotica 16 px</p>
+ 
+   <p class="robotica">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aut cumque officiis sapiente, velit inventore deleniti? Quam nam totam sunt. Nostrum molestiae temporibus unde facere nihil eveniet similique! Doloribus, animi.</p>
+ <!--BUTTONS-->  
+<h3>Buttons</h3> 
+    <div class="buttonscontainer">
+
+       <div class="button">
+            <h5>Home</h5>
+             <img src="./images/home.png" alt="Home Button">
+        </div> 
+
+        <div class="button"></div>
+            <h5>Scroll</h5>
+            <div>
+                 <img src="./images/arrow.png" alt="Scrol arrow">
+            </div>
+        </div>
+
+        <div class="button">
+            <h5>Social media </h5>
+            <img src="./images/facebook.png" alt="Facebook">
+            <img src="./images/instagram.png" alt="Instagram">
+        </div>
+
+         <h5>Ticket</h5>
+        
+
+         <div class= "ticket">
+        <p>Tickets</p>
+         </div>
+ <code>
+             <p>
+                Hoogte: 25px 
+            </p>
+            <p>
+                Breedte: 80px
+            </p>
+            </code>
+            <h5>Foodtruck inschrijven</h5>
+           
+            <div class= "ticket">
+             <p>Foodtruck inschrijven</p>
+              </div>
+ <code>
+                    <p>
+                       Hoogte: 25px 
+                   </p>
+                   <p>
+                       Breedte: 80px
+                   </p>
+                   </code>
+            <h5>Koop</h5>
+            
+             <div class= "ticket">
+            <p>Koop</p>
+            </div>
+<code>
+                    <p>
+                       Hoogte: 25px 
+                   </p>
+                   <p>
+                       Breedte: 80px
+                   </p>
+                   </code>
+    </div>  
+<!--NAVIGATIEBALK--> 
+
+<h3>Navigatie balk</h3> 
+<div class="navigatiebalk">
+    <div class="home knop"><img class="homeimg" src="./images/home.png"></div>
+    <div class="knop">Activiteiten</div>
+    <div class="knop active">Foodtruck</div>
+    <div class="knop">Galerij</div>
+    <div class="knop">Contact</div>
+    <div class="knop">Winkel</div>
+</div>
+<script>
+        var header = document.getElementsByClassName("navigatiebalk");
+        var btns = header[0].getElementsByClassName("knop");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+ </div> 
+ 
+
+    <h5>Navigatiebalk</h5> 
+     <code>   <p>
+            display: flex;<br>
+            justify-content: space-between;<br>
+            padding: 10px 100px 0px 100px;
+        </p> 
+    </code>
+    <h5>Knop </h5>
+    <code>
+        <p>
+            cursor: pointer;<br>
+            border-bottom: black solid 5px;<br>
+            align-self: flex-end;<br>
+            padding-bottom: 10px
+        </p>
+    </code>
+   
+<!--FOOTER-->
+<h3>Footer</h3> 
+
+
+
+<div class="container">
+    <div class="footer">
+        <div class="footerknop">Activiteiten</div>
+        <div class="footerknop">Foodtruck</div>
+        <div class="footerknop">Galerij</div>
+        <div class="footerknop">Contact</div>
+        <div class="footerknop">Winkel</div>  
+   </div>
+
+     
+    <div class="social">
+        <div class="image"><img src="./images/facebook.png" alt="Facebook"></div>
+        <div class="image"> <img src="./images/instagram.png" alt="Instagram"></div>
+    </div>
+
+</div>
+<h5>Footer</h5> 
+<code>   
+    <p>
+        padding: 10px 100px 10px 100px<br>
+        display: flex<br>
+        justify-content: space-around<br>
+        height: 20px<br>
+        position: absolute<br>
+        left: 50%<br>
+        transform: translate(-50%)
+   </p> 
+</code>
+<h5>Knop </h5>
+<code>
+   <p>
+        padding-bottom: 10px <br>
+        padding-left: 4px
+   </p>
+</code>
+<h5>Social media knoppen</h5>
+<code>
+   <p>
+        position: absolute<br>
+        right: 50%<br>
+        display: flex
+   </p>
+</code>
+<!--Hier eindigd mijn styleguide-->
 </body>
 </html>
